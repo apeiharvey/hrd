@@ -1,0 +1,98 @@
+
+html,body{
+	width: 100%;
+	height: 100%;
+	border: 3px dotted pink;
+}
+a:hover{
+	text-decoration: none;
+}
+.holder {
+ 	position: absolute;
+ 	top:0;
+ 	left:0;
+ 	right:0;
+ 	bottom: 0;
+ 	margin: 40px auto 0; 
+ 	text-align: center;
+    font-size: 12px;
+}
+.logo img{
+	width: 200px;
+}
+.content{
+	margin-top: 20px;
+	padding: 0 8px;
+    font-family: cursive;
+}
+.main-title{
+	    font-size: 48px;
+}
+.secondary-title{
+	    font-size: 32px;
+}
+.action{
+	margin-top: 40px;
+}
+.action a{
+	background: transparent;
+    border: 1px solid #212121;
+    padding: 15px 25px;
+    border-radius: 99px;
+    color:#0A0A0A;
+    font-size:18px;
+    transition: all 0.7s ease;
+}
+
+.action a:hover{
+	background:#ed1c24;
+	color:#ffffff;
+    border: 1px solid #ffffff;
+}
+.character-container{
+	height: 120px;
+}
+.character{
+	width: 80px;
+    -webkit-animation: moves 5s infinite; /* Safari 4+ */
+	-moz-animation:    moves 5s infinite; /* Fx 5+ */
+	-o-animation:      moves 5s infinite; /* Opera 12+ */
+	animation:         moves 5s infinite; /* IE 10+, Fx 29+ */
+	animation-iteration-count: infinite;
+			animation-direction: alternate;
+}
+
+@keyframes moves {
+	0%{
+		margin-left: 0;
+	}
+	25%{
+		margin-left: 25%;
+		margin-top: 40px;
+	}
+	50%{
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	75%{
+		margin-right: 25%;
+		margin-top: 40px;
+	}
+	100%{
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.logo img{
+    	width: 90%;
+    }
+    .main-title{
+   	    font-size: 36px;
+    }
+    .secondary-title{
+   	    font-size: 24px;
+    }
+}
+
